@@ -1,0 +1,61 @@
+.page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #000;
+    margin-left: 125px;
+    
+  }
+  
+  /* Background Image Fix */
+  .hero-section {
+    background: url("https://i.ytimg.com/vi/IhH8tyKZQCM/maxresdefault.jpg") no-repeat center center/cover;
+    background-attachment: fixed; /* FIXED BACKGROUND */
+    height: 100vh;
+    position: relative;
+    
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+    background: transparent;
+  }
+  
+  .title {
+    font-size: 54px;
+    font-weight: bold;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .desc {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    background: transparent;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .watch-btn {
+    background: linear-gradient(90deg, #007bff, #ff00cc);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Cards Section */

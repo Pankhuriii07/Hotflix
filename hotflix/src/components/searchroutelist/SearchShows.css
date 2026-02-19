@@ -1,0 +1,14 @@
+.textSearch h2 {
+    color: aliceblue;
+    font-family: math;}
+    .textSearch {
+        margin: 20px 0;
+        color: white;
+      }
+      
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
