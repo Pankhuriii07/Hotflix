@@ -1,0 +1,75 @@
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.15);   /* card hover pe bada ho jayega */
+    z-index: 10;             /* overlap kare dusre cards ke upar */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6); /* 3D shadow effect */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Overlay hidden by default */
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.85);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  .watch-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .card-info p {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.8;
+  }
+  
+  .desc {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  .card-info{
+    padding: 10px;
+  }
+  

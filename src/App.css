@@ -1,0 +1,18 @@
+.leftnavbar-app {
+  max-width: 125px;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0
+;
+  justify-content: center;
+  flex-direction: column;}
+
+  .navbar-app {
+    margin-left: 125px;
+  }
+
+  .search-shows-app {
+    margin-left: 125px;
+  }

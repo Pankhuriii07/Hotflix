@@ -1,0 +1,36 @@
+.leftnavbar-logo {
+    height: 62px;
+    width: 91px;
+    padding: 30px;
+    background-color: none;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    margin-top: 35px;
+
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: flex-start; /* icon + text align properly */
+    cursor: pointer;
+    gap: 12px; /* thoda space icon aur text ke beech */
+}
+
+/* By default text chhupa hua ho */
+.leftnavbar-logo .text {
+    opacity: 0;
+    white-space: nowrap;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover karne par text visible ho */
+.leftnavbar-logo:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 768px) {
+    .leftnavbar {
+      display: none;
+    }
+  }
